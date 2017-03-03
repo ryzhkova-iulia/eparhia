@@ -29,6 +29,14 @@ $(function () {
         ]
     });
 
+    $('.js-slide-small').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        dots: true
+    });
+
     // form callback
     $('.js-popup-form').magnificPopup({
         items: {

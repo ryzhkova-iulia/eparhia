@@ -2996,10 +2996,16 @@ button {
   width: 100%;
   cursor: pointer;
 }
+.btn:hover {
+  background-color: #b7352b;
+}
 .btn_footer {
   background-color: #fff;
   color: #f34639;
   font-weight: bold;
+}
+.btn_footer:hover {
+  background-color: #fff;
 }
 .telephone {
   display: inline-block;
@@ -3056,7 +3062,7 @@ button {
 .slider .slick-prev {
   left: 0;
   background: rgba(255,255,255,0.4);
-  width: 450px;
+  width: 33.3%;
   height: 100%;
   z-index: 500;
 }
@@ -3070,7 +3076,7 @@ button {
 }
 .slider .slick-next {
   background: rgba(255,255,255,0.4);
-  width: 450px;
+  width: 33.3%;
   height: 100%;
   right: 0;
 }
@@ -3124,7 +3130,6 @@ button {
 .block-text {
   margin-top: 45px;
   display: inline-block;
-  text-align: justify;
   padding-right: 20px;
   width: 70%;
   line-height: 24px;
@@ -3160,6 +3165,10 @@ img.block-slide__title__img {
 }
 .block-slide .slick-dots .slick-active button {
   background-color: #f34639;
+}
+.block-slide .slick-dots li button {
+  width: 10px;
+  height: 10px;
 }
 .block-slide .slick-dots li button:before {
   display: none;

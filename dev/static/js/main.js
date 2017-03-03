@@ -1,6 +1,4 @@
 
-
-
 // slider
 $(function () {
     $('.js-slider-church').slick({

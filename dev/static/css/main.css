@@ -2995,6 +2995,7 @@ button {
   display: block;
   width: 100%;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .btn:hover {
   background-color: #b7352b;
@@ -3024,7 +3025,7 @@ button {
 }
 .icon__img {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 5px;
   margin-top: 12px;
 }
 .address {
@@ -3126,6 +3127,12 @@ button {
   display: inline-block;
   background-color: #fff;
   padding-right: 10px;
+}
+.title__text_bg-none {
+  background: none;
+}
+.title_bg-none {
+  background: none;
 }
 .block-text {
   margin-top: 45px;
@@ -3309,6 +3316,19 @@ img.block-slide__title__img {
 .contact__title {
   font-size: 24px;
   font-weight: bold;
+}
+.form-callback {
+  background-color: #fff;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  position: relative;
+}
+.field-item__control {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
 }
 .info {
   display: inline-block;

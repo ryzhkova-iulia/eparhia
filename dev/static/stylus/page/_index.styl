@@ -256,3 +256,16 @@
     padding 10px
     width 100%
     margin 10px 0
+
+.breadcrumps
+  margin-bottom 20px
+  font-family: 'Myriad Pro'
+  &__item
+    float left
+    margin-right 10px
+    &:after
+      content "»"
+      display inline-block
+      margin-left 10px
+    &:last-child:after
+      content ""

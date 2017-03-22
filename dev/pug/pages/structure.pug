@@ -1,0 +1,101 @@
+extends ../layout/main
+
+block title
+    | Eparhia
+
+block content
+    include ../modules/breadcramps
+
+    .container
+        .content
+            section.main-content
+                .title
+                    h2.title__text структура
+                h3.main-content__title Учредитель фонда
+                img(src="./static/img/content/church.png").main-content__img
+                p
+                img(src="./static/img/content/arrow-down.png").main-content__img
+                p.main-content__text Благотворительный фонд Православной религиозной организации Московской епархии Русской Православной Церкви по восстановлению порушенных святынь
+                img(src="./static/img/content/logo-church.png").main-content__img
+                p
+                img(src="./static/img/content/arrow-down.png").main-content__img.main-content__img_margin
+                h3.main-content__title Управляющий совет фонда:
+                .council
+                    .council__item
+                        img(src="./static/img/content/counsil1.png").council__item__img
+                        .council__item__text Председатель Управляющего совета Фонда протоиерий Михаил Егоров
+                    .council__item
+                        img(src="./static/img/content/counsil2.png").council__item__img
+                        .council__item__text Член Управляющего совета протоиерий Константин Островский (Директор Фонда)
+                    .council__item
+                        img(src="./static/img/content/counsil3.png").council__item__img
+                        .council__item__text Член Управляющего совета священик Василий Лосев
+                    .council__item
+                        img(src="./static/img/content/counsil1.png").council__item__img
+                        .council__item__text Председатель Управляющего совета Фонда протоиерий Михаил Егоров
+                    .council__item
+                        img(src="./static/img/content/counsil2.png").council__item__img
+                        .council__item__text Член Управляющего совета протоиерий Константин Островский (Директор Фонда)
+                    .council__item
+                        img(src="./static/img/content/counsil3.png").council__item__img
+                        .council__item__text Член Управляющего совета священик Василий Лосев
+                img(src="./static/img/content/arrow-down.png").main-content__img.main-content__img_margin
+                h3.main-content__title Попечительский совет Фонда возглавляют:
+                .council
+                    .council__item
+                        img(src="./static/img/content/counsil1.png").council__item__img
+                        .council__item__text
+                            strong.council__item__text__title Сопредседатель
+                            | Митрополит Крутицкий и Коломенский Ювеналий Управляющий Московской епархией
+                    .council__item
+                        img(src="./static/img/content/counsil2.png").council__item__img
+                        .council__item__text
+                            strong.council__item__text__title Сопредседатель
+                            |А.Ю. Воробьев Губернатор Московкой области
+                img(src="./static/img/content/arrow-down.png").main-content__img.main-content__img_margin
+                h3.main-content__title Членами попечительского совета являются:
+                .council
+                    .council__item
+                        img(src="./static/img/content/counsil1.png").council__item__img
+                        .council__item__text Председатель Управляющего совета Фонда протоиерий Михаил Егоров
+                    .council__item
+                        img(src="./static/img/content/counsil2.png").council__item__img
+                        .council__item__text Член Управляющего совета протоиерий Константин Островский (Директор Фонда)
+                    .council__item
+                        img(src="./static/img/content/counsil3.png").council__item__img
+                        .council__item__text Член Управляющего совета священик Василий Лосев
+                    .council__item
+                        img(src="./static/img/content/counsil1.png").council__item__img
+                        .council__item__text Председатель Управляющего совета Фонда протоиерий Михаил Егоров
+                    .council__item
+                        img(src="./static/img/content/counsil2.png").council__item__img
+                        .council__item__text Член Управляющего совета протоиерий Константин Островский (Директор Фонда)
+                    .council__item
+                        img(src="./static/img/content/counsil3.png").council__item__img
+                        .council__item__text Член Управляющего совета священик Василий Лосев
+
+
+            section.videos
+                .title
+                    h2.title__text видеоматериалы
+                .video
+                    .video__item
+                        iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+                    .video__item
+                        iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+                    .video__item
+                        iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+
+
+
+    //script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=2000&h=400&map=1')
+
+
+    form.form-callback.mfp-hide#popup-form
+        .title.title_bg-none.title__text заказать обратный звонок
+        .field-item
+            input(name="name" type="text" placeholder="Ваше имя").field-item__control.border
+        .field-item
+            input(name="phone" type="phone" placeholder="Ваше номер телефона").field-item__control.border
+        .field-item.field-item_size
+            button(type="button").btn Оставить заявку

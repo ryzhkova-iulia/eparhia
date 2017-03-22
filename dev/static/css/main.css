@@ -2882,6 +2882,7 @@ html {
 body {
   font-family: 'Open Sans';
   font-size: 14px;
+  color: #343434;
 }
 h1,
 h2,
@@ -3330,6 +3331,22 @@ img.block-slide__title__img {
   width: 100%;
   margin: 10px 0;
 }
+.breadcrumps {
+  margin-bottom: 20px;
+  font-family: 'Myriad Pro';
+}
+.breadcrumps__item {
+  float: left;
+  margin-right: 10px;
+}
+.breadcrumps__item:after {
+  content: "»";
+  display: inline-block;
+  margin-left: 10px;
+}
+.breadcrumps__item:last-child:after {
+  content: "";
+}
 .info {
   display: inline-block;
   vertical-align: top;
@@ -3364,4 +3381,59 @@ img.block-slide__title__img {
 }
 .social-contact__img {
   margin-left: 10px;
+}
+.main-content {
+  width: 70%;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+}
+.main-content .title {
+  text-align: left;
+}
+.main-content__img {
+  display: inline-block;
+}
+.main-content__img_margin {
+  margin-top: 30px;
+}
+.main-content__title {
+  font-size: 29px;
+  font-family: 'Myriad Pro';
+  margin: 30px 0;
+}
+.main-content__img-arrow {
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+}
+.main-content__text {
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 30px;
+}
+.videos {
+  width: 25%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.council {
+  text-align: center;
+}
+.council__item {
+  display: inline-block;
+  height: 250px;
+  margin: 0 40px;
+  vertical-align: top;
+}
+.council__item__text {
+  width: 215px;
+  font-family: 'Myriad Pro';
+  margin-top: 20px;
+}
+.council__item__text__title {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
 }

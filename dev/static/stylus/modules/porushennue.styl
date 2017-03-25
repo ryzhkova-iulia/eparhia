@@ -1,0 +1,143 @@
+
+.title_width
+	width 50%
+	display inline-block
+	vertical-align middle
+
+.search
+	display inline-block
+	width 49%
+	position relative
+	text-align right
+	font-size 14px
+	&__input
+		display inline-block
+		padding 10px 30px
+		width  400px
+		border-radius 5px 0 0 5px
+		border 1px solid #CCCCCC
+	&:before
+		content ""
+		display inline-block
+		width 16px
+		height 16px
+		background url("../img/content/search-icone.png") no-repeat left
+		position absolute
+		left 115px
+		top 10px
+	&__button
+		display inline-block
+		position relative
+		border 1px solid #CCCCCC
+		background-color #f2f2f2
+		padding 11px 30px
+		border-radius 0 5px 5px 0
+		margin-left -5px
+		cursor pointer
+		&:after
+			content ""
+			display inline-block
+			width 7px
+			height 11px
+			background url("../img/content/arrows.png") no-repeat left
+			position absolute
+			right  10px
+			top 13px
+
+.old-church
+	text-align center
+	&__item
+		display inline-block
+		margin 10px
+	&__title
+		width 100%
+		max-width 410px
+		font-weight bold
+		font-size 16px
+		line-height 24px
+		margin 20px 0
+		text-align left
+
+.old-church__item__table
+	width 100%
+	max-width 410px
+	text-align left
+	border-spacing 0
+	td
+		width 50%
+		padding 10px
+
+	&_tr-gray
+		background-color #f2f2f2
+
+.td-color-red
+	color #f34639
+	font-weight bold
+
+.td-link
+	font-weight bold
+	text-transform uppercase
+	text-align right
+.td-link a
+	color #f34639
+	text-decoration underline
+
+.select2-container--default .select2-selection--single
+	background-color #f2f2f2
+	border none
+
+.select2
+	display inline-block
+	position relative
+	border 1px solid #CCCCCC
+	background-color #f2f2f2
+	padding 4px 0
+	border-radius 0 5px 5px 0
+	margin-left -5px
+	cursor pointer
+	text-align left
+	margin-top -2px
+	&:after
+		content ""
+		display inline-block
+		width 7px
+		height 11px
+		background url("../img/content/arrows.png") no-repeat left
+		position absolute
+		right  10px
+		top 13px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+	display none
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	background-color #f34639
+	color #FFFFFF
+
+.select2-container--default .select2-results__option[aria-selected=true]
+	background-color #FFFFFF
+	color  #343434
+
+.select2-search--dropdown
+	display none
+
+.select2-container--default .select2-results>.select2-results__options
+	overflow inherit
+
+.select2-results__option
+	background-color #FFFFFF
+
+.pagination
+	text-align center
+	margin 20px 0
+	&__item
+		display inline-block
+		padding 20px
+		background-color #f2f2f2
+		font-size 15px
+		font-weight bold
+		margin 5px
+		&:hover
+			background-color #f34639
+			color #FFFFFF
+

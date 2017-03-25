@@ -72,3 +72,9 @@ $(function () {
 //     $('input[name="phone"]').mask("+7 (999) 999-99-99",{placeholder:"_"});
 //
 });
+
+
+//select2
+$(function () {
+    $(".js-select2").select2();
+});

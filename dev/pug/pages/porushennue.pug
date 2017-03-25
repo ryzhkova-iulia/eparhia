@@ -1,0 +1,63 @@
+extends ../layout/main
+
+block title
+    | Eparhia
+
+block content
+    include ../modules/breadcramps
+
+    .container
+        .content
+            .title.title_width
+                h2.title__text Порушенные святыни
+            .search
+                input.search__input(placeholder="Поиск по району")
+                select.js-select2.search__button
+                    option(value="Москва" selected=true) Москва
+                    option(value="Рязань") Рязань
+                    option(value="Рязань") Рязань
+                    option(value="Рязань") Рязань
+                    option(value="Рязань") Рязань
+                    option(value="Рязань") Рязань
+                    option(value="Рязань") Рязань
+                    option(value="Рязань") Рязань
+
+            section.old-church
+                - var n = 0;
+                while n < 6
+                    - n++
+                    .old-church__item
+                        img(src="./static/img/content/old-church.png").old-church__item__img
+                        .old-church__title Церковь Обновления храма Воскресения Христова в деревне Воскресенское Рузского района
+                        table.old-church__item__table
+                            tr.old-church__item__table_tr-gray
+                                td Района
+                                td Сямженский
+                            tr
+                                td Деревня
+                                td Пуронга
+                            tr.old-church__item__table_tr-gray
+                                td Состояние
+                                td аварийное
+                            tr
+                                td Номер
+                                td 2016
+                            tr.old-church__item__table_tr-gray
+                                td Потраченная сумма
+                                td.td-color-red 230 000 руб.
+                            tr
+                                td(colspan="3").td-link
+                                    a(href="/porushennue-detales.html") подробнее
+
+            .pagination
+                a(href="").pagination__item <<
+                a(href="").pagination__item <
+                a(href="").pagination__item 1
+                a(href="").pagination__item 2
+                a(href="").pagination__item 3
+                a(href="").pagination__item >
+                a(href="").pagination__item >>
+
+    .container
+        .content.content_no-padding
+            script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=1300&h=400&map=1')

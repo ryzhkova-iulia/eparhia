@@ -1,0 +1,57 @@
+.menu
+	text-align center
+	position relative
+
+.submenu
+	position absolute
+	background-color #FFFFFF
+	z-index 800
+	box-shadow: 0px 0px 19.2px 0.8px rgba(32,32,32,0.1)
+	padding 15px
+	top 68px
+	display none
+	width 280px
+
+	&:before
+		content ''
+		position absolute
+		background #fff
+		left 50px
+		top -8px
+		width 17px
+		height 17px
+		z-index -1
+		transform rotate(45deg)
+		-webkit-transform rotate(45deg)
+		box-shadow: -7px -7px 28.2px 0.8px rgba(32,32,32,0.1)
+	&__item
+		text-align left
+		padding 15px
+		&:hover
+			text-decoration underline
+.menu__item
+	font-weight bold
+	float left
+	display inline-block
+	text-transform uppercase
+	position relative
+	&:after
+		content: ''
+		position: absolute
+		display: block
+		height: 14px
+		width: 100%
+		right: -10px
+		z-index 800
+	&__link
+		display inline-block
+		padding 20px 31px
+
+		&:hover
+			background-color #f34639
+			color #FFFFFF
+	&:hover
+		.submenu
+			display block
+
+

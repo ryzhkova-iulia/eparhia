@@ -85,19 +85,11 @@ block content
                             .church__item__text Вознесенский храм села Сенницы Озерского района
                                 a(href="").church__item__text__link подробнее
 
-    .container.donation_bg
-        .content
-            section.donation.clearfix
-                img(src="./static/img/content/iPhone-6.png").donation__img
-                .donation__block Мы рады сообщить Вам, что теперь у Вас есть возможность отправить пожертвование по СМС на короткий номер
-                    strong  «7878»
-                    span.donation__block__subtitle Минимальная сумма платежа 50 руб., максимальная - 15 000 руб.
-                    button.button скачать буклет о работе фонда
 
-    .container.container_margin
+    .container
         .content
             .title
-                h2.title__text новости фонда
+                h2.title__text видеоматериалы
             section.news
                 .news__item
                     .date 25
@@ -115,7 +107,17 @@ block content
                     img(src="./static/img/content/news3.jpg").news__item__img
                     a(href="").news__item__text Встреча митрополита Ювеналия с благочинными церковных округов Московской епархии
 
-    .container
+    .container.donation_bg
+        .content
+            section.donation.clearfix
+                img(src="./static/img/content/iPhone-6.png").donation__img
+                .donation__block Мы рады сообщить Вам, что теперь у Вас есть возможность отправить пожертвование по СМС на короткий номер
+                    strong  «7878»
+                    span.donation__block__subtitle Минимальная сумма платежа 50 руб., максимальная - 15 000 руб.
+                    button.button скачать буклет о работе фонда
+
+
+    .container.container_margin
         .content
             .title
                 h2.title__text новости фонда
@@ -132,8 +134,9 @@ block content
     //        .contact
     //            .contact__title Наш адрес
     //            | 143408, Красногорск Московской области, ул. Ленина, 67а
-
-    script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=2000&h=400&map=1')
+    .container
+        .content.content_no-padding
+            script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=1300&h=400&map=1')
 
 
     form.form-callback.mfp-hide#popup-form

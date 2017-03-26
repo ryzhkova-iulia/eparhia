@@ -76,5 +76,29 @@ $(function () {
 
 //select2
 $(function () {
-    $(".js-select2").select2();
+    $(".js-box-select").each(function () {
+        var $target = $(this);
+        var $select = $target.find(".search__box-select");
+        var $button = $target.find(".search-btn");
+        var $customOptionsElement = $("<ul class='box-select'></ul>");
+        $select.before($customOptionsElement);
+
+        $target.on("click", ".search__select-btn", function () {
+            $customOptionsElement.toggleClass("show");
+        });
+
+        $target.on("click", ".box-select__item", function () {
+            var $option = $(this);
+            $customOptionsElement.toggleClass("show");
+            $button.html($option.html());
+            $select.val($option.data("option"));
+            $option.parent().find(".active").removeClass("active");
+            $option.addClass("active");
+        });
+
+        $select.find("option").each(function () {
+            var $optionTarget = $(this);
+            $customOptionsElement.append("<li class='box-select__item" + (this.selected ? " active" : "") + "' data-option='" + $optionTarget.val() + "'>" + $optionTarget.html() + "</li>");
+        });
+    });
 });

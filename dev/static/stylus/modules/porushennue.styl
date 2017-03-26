@@ -6,16 +6,16 @@
 
 .search
 	display inline-block
-	width 49%
 	position relative
-	text-align right
+	float right
 	font-size 14px
+	border 1px solid #d4d4d4
+	border-radius 5px
 	&__input
 		display inline-block
 		padding 10px 30px
 		width  400px
-		border-radius 5px 0 0 5px
-		border 1px solid #CCCCCC
+		border none
 	&:before
 		content ""
 		display inline-block
@@ -23,26 +23,63 @@
 		height 16px
 		background url("../img/content/search-icone.png") no-repeat left
 		position absolute
-		left 115px
+		left 5px
 		top 10px
-	&__button
-		display inline-block
-		position relative
-		border 1px solid #CCCCCC
-		background-color #f2f2f2
-		padding 11px 30px
-		border-radius 0 5px 5px 0
-		margin-left -5px
+
+.search__combo-btn
+	position relative
+	font-size 15px
+	display inline-block
+	background #f2f2f2
+	border-left 1px solid #d4d4d4
+//border 1px solid #d4d4d4
+//border-left none
+//border-radius 3px
+
+.search-btn
+	background none
+	border none
+	outline none
+	padding 10px 0
+	padding-left 13px
+	padding-right 8px
+	cursor pointer
+	min-width 160px
+	text-align left
+
+.search__select-btn
+	width 34px
+	cursor pointer
+	height 11px
+	background url("../img/content/arrows.png") no-repeat center
+	display inline-block
+	padding: 18px 20px
+	vertical-align top
+
+.box-select
+	position absolute
+	right 40px
+	top -40px
+	padding 16px 15px
+	background #FFFFFF
+	box-shadow: 0 0 7.84px 0.16px rgba(0, 0, 0, 0.3);
+	min-width 200px
+	text-align left
+	display none
+
+	&__item
+		padding 8px 11px
 		cursor pointer
-		&:after
-			content ""
-			display inline-block
-			width 7px
-			height 11px
-			background url("../img/content/arrows.png") no-repeat left
-			position absolute
-			right  10px
-			top 13px
+
+	.active, &__item:hover
+		background-color #f34639
+		color #FFFFFF
+
+.box-select.show
+	display block
+
+.search__box-select
+	display none
 
 .old-church
 	text-align center
@@ -82,54 +119,13 @@
 	color #f34639
 	text-decoration underline
 
-.select2-container--default .select2-selection--single
-	background-color #f2f2f2
-	border none
 
-.select2
-	display inline-block
-	position relative
-	border 1px solid #CCCCCC
-	background-color #f2f2f2
-	padding 4px 0
-	border-radius 0 5px 5px 0
-	margin-left -5px
-	cursor pointer
-	text-align left
-	margin-top -2px
-	&:after
-		content ""
-		display inline-block
-		width 7px
-		height 11px
-		background url("../img/content/arrows.png") no-repeat left
-		position absolute
-		right  10px
-		top 13px
 
-.select2-container--default .select2-selection--single .select2-selection__arrow
-	display none
-
-.select2-container--default .select2-results__option--highlighted[aria-selected]
-	background-color #f34639
-	color #FFFFFF
-
-.select2-container--default .select2-results__option[aria-selected=true]
-	background-color #FFFFFF
-	color  #343434
-
-.select2-search--dropdown
-	display none
-
-.select2-container--default .select2-results>.select2-results__options
-	overflow inherit
-
-.select2-results__option
-	background-color #FFFFFF
 
 .pagination
 	text-align center
 	margin 20px 0
+	margin-top 40px
 	&__item
 		display inline-block
 		padding 20px

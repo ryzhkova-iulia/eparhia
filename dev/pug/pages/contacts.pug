@@ -1,0 +1,117 @@
+extends ../layout/main
+
+block title
+    | Eparhia
+
+block content
+    include ../modules/breadcramps
+
+    .container
+        .content
+            .title
+                h2.title__text Контакты
+            .block-contacts
+                .block-contacts__item
+                    img(src="./static/img/content/icon-point.png").block-contacts__item__img
+                    .block-contacts__item__text
+                        span.color-red Адрес:
+                        | 143408, Красногорск Московской области, ул. Ленина, 67а
+                .block-contacts__item
+                    img(src="./static/img/content/icon-tel.png").block-contacts__item__img
+                    .block-contacts__item__text
+                        span.color-red Телефон:
+                        | +7 (495) 563-15-64
+                        | (дежурный в храме)
+                .block-contacts__item
+                    img(src="./static/img/content/icon-letter.png").block-contacts__item__img
+                    a(href="").block-contacts__item__text
+                        span.color-red E-mail:
+                        | fond-vps@yandex.ru
+
+            .block-map
+                script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=835&h=400&map=1')
+
+            .block-contacts__text
+                .block-contacts__text__paragraf
+                    span.font-bold Директор Благотворительного фонда Московской епархии по восстановлению порушенных святынь – протоиерей Константин Островский, председатель<br>
+                    | Епархиального отдела по реставрации и строительству, благочинный церквей Красногорского округа, настоятель Успенского храма г.Красногорска.<br>
+                    | Телефоны: (495) 563-15-64 (дежурный в храме), (916)605-51-71, (963)770-85-84.<br>
+                    | Почтовый адрес храма: 143408, Красногорск Московской области, ул. Ленина, 67а. Проезд от м. Тушинская на микроавтобусе № 120 (минут пятнадцать без учёта пробок). <br>
+                    | На автомобиле от МКАД ехать по Волоколамскому шоссе до развилки на въезде в Красногорск. На развилке не ехать прямо (по Ильинскому шоссе), а повернуть направо (продолжать ехать по Волоколамскому шоссе). В центре города, напротив здания Красногорской администрации – Знаменская церковь. Это не та, проехать мимо неё. Перед поворотом Волоколамского шоссе налево, по правую сторону  шоссе – двухэтажный, из красного кирпича  с белой отделкой Успенский храм города Красногорска.
+                .block-contacts__text__paragraf
+                    span.font-bold Председатель Управляющего совета протоиерей – Михаил Егоров <br>
+                    | Телефоны: (499)246-08-81;
+                .block-contacts__text__paragraf
+                    span.font-bold Член Управляющего совета Фонда, епархиальный древлехранитель, заместитель председателя ЕОРЕСТ, консультант по вопросам подготовки и согласования проектной и разрешительной документации для проведения реставрационных работ – игумен Серафим (Голованов),  <br>
+                    | Игумен Гуслицкого Спасо-Преображенского мужского монастыря. <br>
+                    | Телефоны: (917)594-17-90; E-mail: o.serafim@list.ru
+                .block-contacts__text__paragraf
+                    span.font-bold Старший секретарь Фонда Анна Николаевна Макушина.<br>
+                    | Телефоны: (495)563-15-64, (916)126-78-84
+                .block-contacts__text__paragraf
+                    span.font-bold Секретарь Фонда Анна Васильевна Скуратова.   <br>
+                    | Телефоны: (495)563-15-64, (916)311-70-64
+                    | E-mail: fond-vps@yandex.ru
+
+            section
+                .title
+                    h2.title__text востановленные храмы
+                .church
+                    .church__item
+                        .church__item__img
+                            img(src="./static/img/content/church1.jpg")
+                            .church__item__text Церковь Обновления храма Воскресения Христова в деревне Воскресенское Рузского района
+                                a(href="").church__item__text__link подробнее
+                    .church__item
+                        .church__item__img
+                            img(src="./static/img/content/church2.jpg")
+                            .church__item__text Ильинский храм в селе Пруссы Коломенского района
+                                a(href="").church__item__text__link подробнее
+                    .church__item
+                        .church__item__img
+                            img(src="./static/img/content/church3.jpg")
+                            .church__item__text Вознесенский храм села Сенницы Озерского района
+                                a(href="").church__item__text__link подробнее
+
+            .title
+                h2.title__text видеоматериалы
+            section.video
+                .video__item
+                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+                .video__item
+                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+                .video__item
+                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+
+    .container.donation_bg.container_margin
+        .content
+            section.donation.clearfix
+                img(src="./static/img/content/iPhone-6.png").donation__img
+                .donation__block Мы рады сообщить Вам, что теперь у Вас есть возможность отправить пожертвование по СМС на короткий номер
+                    strong  «7878»
+                    span.donation__block__subtitle Минимальная сумма платежа 50 руб., максимальная - 15 000 руб.
+                    button.button скачать буклет о работе фонда
+
+
+    .container.container_margin
+        .content
+            .title
+                h2.title__text новости фонда
+            section.news
+                .news__item
+                    .date 25
+                        span март
+                    img(src="./static/img/content/news1.jpg").news__item__img
+                    a(href="/news-details.html").news__item__text Освящение креста Богородицерождественского храма села Большие Белыничи Зарайского района
+                .news__item
+                    .date 31
+                        span апр
+                    img(src="./static/img/content/news2.jpg").news__item__img
+                    a(href="/news-details.html").news__item__text Сюжет о восстановлении Богородицерождественского храма в селе Никольское Рузского района на телеканале "360 Подмосковье"
+                .news__item
+                    .date 10
+                        span янв
+                    img(src="./static/img/content/news3.jpg").news__item__img
+                    a(href="/news-details.html").news__item__text Встреча митрополита Ювеналия с благочинными церковных округов Московской епархии
+
+    include ../modules/form-callback

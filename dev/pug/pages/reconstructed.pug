@@ -10,17 +10,33 @@ block content
         .content
             .title.title_width
                 h2.title__text востановленные храмы
-            .search
+            form.search
                 input.search__input(placeholder="Поиск по району")
-                select.js-select2.search__button
-                    option(value="Москва" selected=true) Москва
-                    option(value="Рязань") Рязань
-                    option(value="Рязань") Рязань
-                    option(value="Рязань") Рязань
-                    option(value="Рязань") Рязань
-                    option(value="Рязань") Рязань
-                    option(value="Рязань") Рязань
-                    option(value="Рязань") Рязань
+                .search__combo-btn.js-box-select
+                    button.search-btn(type="submit") Москва
+                    .search__select-btn
+                    select.search__box-select(name="city_name")
+                        option(value="Москва" selected=true) Москва
+                        option(value="Санкт-Петербург") Санкт-Петербург
+                        option(value="Астрахань") Астрахань
+                        option(value="Барнаул") Барнаул
+                        option(value="Волгоград") Волгоград
+                        option(value="Воронеж") Воронеж
+                        option(value="Екатеринбург") Екатеринбург
+                        option(value="Ижевск") Ижевск
+                        option(value="Иркутск") Иркутск
+                        option(value="Казань") Казань
+                        option(value="Калининград") Калининград
+                        option(value="Краснодар") Краснодар
+                        option(value="Красноярск") Красноярск
+                        option(value="Набережные Челны") Набережные Челны
+                        option(value="Нижний Новгород") Нижний Новгород
+                        option(value="Новосибирск") Новосибирск
+                        option(value="Омск") Омск
+                        option(value="Оренбург") Оренбург
+                        option(value="Пермь") Пермь
+                        option(value="Ростов-на-Дону") Ростов-на-Дону
+
 
             section.old-church
                 - var n = 0;
@@ -61,3 +77,5 @@ block content
     .container
         .content.content_no-padding
             script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=1300&h=400&map=1')
+
+    include ../modules/form-callback

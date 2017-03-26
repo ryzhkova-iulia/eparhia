@@ -1,0 +1,70 @@
+extends ../layout/main
+
+block title
+    | Eparhia
+
+block content
+    include ../modules/breadcramps
+
+    .container
+        .content
+            .title
+                h2.title__text Новости
+            section.news
+                .news__item
+                    .date 25
+                        span март
+                    img(src="./static/img/content/news1.jpg").news__item__img
+                    a(href="").news__item__text Освящение креста Богородицерождественского храма села Большие Белыничи Зарайского района
+                .news__item
+                    .date 31
+                        span апр
+                    img(src="./static/img/content/news2.jpg").news__item__img
+                    a(href="").news__item__text Сюжет о восстановлении Богородицерождественского храма в селе Никольское Рузского района на телеканале "360 Подмосковье"
+                .news__item
+                    .date 10
+                        span янв
+                    img(src="./static/img/content/news3.jpg").news__item__img
+                    a(href="").news__item__text Встреча митрополита Ювеналия с благочинными церковных округов Московской епархии
+                .news__item
+                    .date 25
+                        span март
+                    img(src="./static/img/content/news1.jpg").news__item__img
+                    a(href="").news__item__text Освящение креста Богородицерождественского храма села Большие Белыничи Зарайского района
+                .news__item
+                    .date 31
+                        span апр
+                    img(src="./static/img/content/news2.jpg").news__item__img
+                    a(href="").news__item__text Сюжет о восстановлении Богородицерождественского храма в селе Никольское Рузского района на телеканале "360 Подмосковье"
+                .news__item
+                    .date 10
+                        span янв
+                    img(src="./static/img/content/news3.jpg").news__item__img
+                    a(href="").news__item__text Встреча митрополита Ювеналия с благочинными церковных округов Московской епархии
+                .news__item
+                    .date 25
+                        span март
+                    img(src="./static/img/content/news1.jpg").news__item__img
+                    a(href="").news__item__text Освящение креста Богородицерождественского храма села Большие Белыничи Зарайского района
+                .news__item
+                    .date 31
+                        span апр
+                    img(src="./static/img/content/news2.jpg").news__item__img
+                    a(href="").news__item__text Сюжет о восстановлении Богородицерождественского храма в селе Никольское Рузского района на телеканале "360 Подмосковье"
+                .news__item
+                    .date 10
+                        span янв
+                    img(src="./static/img/content/news3.jpg").news__item__img
+                    a(href="").news__item__text Встреча митрополита Ювеналия с благочинными церковных округов Московской епархии
+
+
+            .pagination
+                a(href="").pagination__item <<
+                a(href="").pagination__item <
+                a(href="").pagination__item 1
+                a(href="").pagination__item 2
+                a(href="").pagination__item 3
+                a(href="").pagination__item >
+                a(href="").pagination__item >>
+
+    include ../modules/form-callback

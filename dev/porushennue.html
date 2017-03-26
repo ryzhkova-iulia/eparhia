@@ -28,22 +28,23 @@
       <div class="container container_gray">
         <div class="content content_no-padding">
           <ul class="menu clearfix">
-            <li class="menu__item"><a class="menu__item__link" href="">о фонде</a>
+            <li class="menu__item"><a class="menu__item__link" href="/">о фонде</a>
               <ul class="submenu">
                 <li class="submenu__item"><a class="submenu__item__link" href="/">о фонде</a></li>
                 <li class="submenu__item"><a class="submenu__item__link" href="/structure.html">структура фонда</a></li>
+                <li class="submenu__item"><a class="submenu__item__link" href="/news.html">новости</a></li>
               </ul>
             </li>
             <li class="menu__item"><a class="menu__item__link" href="/porushennue.html">Порушенные святыни</a></li>
             <li class="menu__item"><a class="menu__item__link" href="/reconstructed.html">Востановленные храмы</a></li>
             <li class="menu__item"><a class="menu__item__link" href="">Благотворители</a></li>
             <li class="menu__item"><a class="menu__item__link" href="">Благополучателям</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="">наши контакты</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="/contacts.html">наши контакты</a></li>
           </ul>
         </div>
       </div>
       <div class="container">
-        <div class="content">
+        <div class="content content_padding-bottom clearfix">
           <ul class="breadcrumps">
             <li class="breadcrumps__item"><a class="breadcrumps__item__link" href="">Главная</a></li>
             <li class="breadcrumps__item"><a class="breadcrumps__item__link" href="">О фонде</a></li>
@@ -56,19 +57,35 @@
           <div class="title title_width">
             <h2 class="title__text">Порушенные святыни</h2>
           </div>
-          <div class="search">
+          <form class="search">
             <input class="search__input" placeholder="Поиск по району">
-            <select class="js-select2 search__button">
-              <option value="Москва" selected>Москва</option>
-              <option value="Рязань">Рязань</option>
-              <option value="Рязань">Рязань</option>
-              <option value="Рязань">Рязань</option>
-              <option value="Рязань">Рязань</option>
-              <option value="Рязань">Рязань</option>
-              <option value="Рязань">Рязань</option>
-              <option value="Рязань">Рязань</option>
-            </select>
-          </div>
+            <div class="search__combo-btn js-box-select">
+              <button class="search-btn" type="submit">Москва</button>
+              <div class="search__select-btn"></div>
+              <select class="search__box-select" name="city_name">
+                <option value="Москва" selected>Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Астрахань">Астрахань</option>
+                <option value="Барнаул">Барнаул</option>
+                <option value="Волгоград">Волгоград</option>
+                <option value="Воронеж">Воронеж</option>
+                <option value="Екатеринбург">Екатеринбург</option>
+                <option value="Ижевск">Ижевск</option>
+                <option value="Иркутск">Иркутск</option>
+                <option value="Казань">Казань</option>
+                <option value="Калининград">Калининград</option>
+                <option value="Краснодар">Краснодар</option>
+                <option value="Красноярск">Красноярск</option>
+                <option value="Набережные Челны">Набережные Челны</option>
+                <option value="Нижний Новгород">Нижний Новгород</option>
+                <option value="Новосибирск">Новосибирск</option>
+                <option value="Омск">Омск</option>
+                <option value="Оренбург">Оренбург</option>
+                <option value="Пермь">Пермь</option>
+                <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+              </select>
+            </div>
+          </form>
           <section class="old-church">
             <div class="old-church__item"><img class="old-church__item__img" src="./static/img/content/old-church.png">
               <div class="old-church__title">Церковь Обновления храма Воскресения Христова в деревне Воскресенское Рузского района</div>
@@ -247,6 +264,18 @@
           <script type="text/javascript" src="http://prihod.ru/ortox-map.php?metropoly=5208&amp;w=1300&amp;h=400&amp;map=1"></script>
         </div>
       </div>
+      <form class="form-callback mfp-hide" id="popup-form">
+        <div class="title title_bg-none title__text">заказать обратный звонок</div>
+        <div class="field-item">
+          <input class="field-item__control border" name="name" type="text" placeholder="Ваше имя">
+        </div>
+        <div class="field-item">
+          <input class="field-item__control border" name="phone" type="phone" placeholder="Ваше номер телефона">
+        </div>
+        <div class="field-item field-item_size">
+          <button class="btn" type="button">Оставить заявку</button>
+        </div>
+      </form>
       <footer>
         <div class="container container_br-red clearfix">
           <div class="content clearfix"><img class="logo-footer" src="./static/img/content/logo-footer.png">
@@ -270,6 +299,8 @@
               <li class="info__item__li"><a class="info__item" href="tel: +7 (495) 563-15-64">Телефон: +7 (495) 563-15-64</a></li>
               <li class="info__item__li"><a class="info__item" href="mailto:fond-vps@yandex.ru">e-mail: fond-vps@yandex.ru</a></li>
             </ul>
+          </div>
+          <div class="content">
             <div class="social clearfix">
               <div class="social-contact"><a href=""><img class="social-contact__img" src="./static/img/content/fb-footer.png"></a><a href=""><img class="social-contact__img" src="./static/img/content/vk-footer.png"></a><a href=""><img class="social-contact__img" src="./static/img/content/insta-footer.png"></a></div>
               <div class="social-contact__btn">

@@ -90,24 +90,18 @@ block content
         .content
             .title
                 h2.title__text видеоматериалы
-            section.news
-                .news__item
-                    .date 25
-                        span март
-                    img(src="./static/img/content/news1.jpg").news__item__img
-                    a(href="").news__item__text Освящение креста Богородицерождественского храма села Большие Белыничи Зарайского района
-                .news__item
-                    .date 31
-                        span апр
-                    img(src="./static/img/content/news2.jpg").news__item__img
-                    a(href="").news__item__text Сюжет о восстановлении Богородицерождественского храма в селе Никольское Рузского района на телеканале "360 Подмосковье"
-                .news__item
-                    .date 10
-                        span янв
-                    img(src="./static/img/content/news3.jpg").news__item__img
-                    a(href="").news__item__text Встреча митрополита Ювеналия с благочинными церковных округов Московской епархии
+            section.video
+                .video__item
+                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+                .video__item
+                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+                .video__item
+                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
 
-    .container.donation_bg
+
+
+
+    .container.donation_bg.container_margin
         .content
             section.donation.clearfix
                 img(src="./static/img/content/iPhone-6.png").donation__img
@@ -121,13 +115,24 @@ block content
         .content
             .title
                 h2.title__text новости фонда
-            section.video
-                .video__item
-                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
-                .video__item
-                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
-                .video__item
-                    iframe(width="410" height="200" src="https://www.youtube.com/embed/GJ5EPNWe-IU" frameborder="0" allowfullscreen)
+            section.news
+                .news__item
+                    .date 25
+                        span март
+                    img(src="./static/img/content/news1.jpg").news__item__img
+                    a(href="/news-details.html").news__item__text Освящение креста Богородицерождественского храма села Большие Белыничи Зарайского района
+                .news__item
+                    .date 31
+                        span апр
+                    img(src="./static/img/content/news2.jpg").news__item__img
+                    a(href="/news-details.html").news__item__text Сюжет о восстановлении Богородицерождественского храма в селе Никольское Рузского района на телеканале "360 Подмосковье"
+                .news__item
+                    .date 10
+                        span янв
+                    img(src="./static/img/content/news3.jpg").news__item__img
+                    a(href="/news-details.html").news__item__text Встреча митрополита Ювеналия с благочинными церковных округов Московской епархии
+
+
 
     //.container#map.ya-map.clearfix
     //    .content.content_position
@@ -139,11 +144,4 @@ block content
             script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=1300&h=400&map=1')
 
 
-    form.form-callback.mfp-hide#popup-form
-        .title.title_bg-none.title__text заказать обратный звонок
-        .field-item
-            input(name="name" type="text" placeholder="Ваше имя").field-item__control.border
-        .field-item
-            input(name="phone" type="phone" placeholder="Ваше номер телефона").field-item__control.border
-        .field-item.field-item_size
-            button(type="button").btn Оставить заявку
+    include ../modules/form-callback

@@ -121,17 +121,9 @@ block content
                                 a(href="").church__item__text__link подробнее
 
 
-    //.container
-    //    .content
-    //        script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=1300&h=400&map=1')
+    .container
+        .content
+            script(type='text/javascript', src='http://prihod.ru/ortox-map.php?metropoly=5208&w=1300&h=400&map=1')
 
+    include ../modules/form-callback
 
-
-    form.form-callback.mfp-hide#popup-form
-        .title.title_bg-none.title__text заказать обратный звонок
-        .field-item
-            input(name="name" type="text" placeholder="Ваше имя").field-item__control.border
-        .field-item
-            input(name="phone" type="phone" placeholder="Ваше номер телефона").field-item__control.border
-        .field-item.field-item_size
-            button(type="button").btn Оставить заявку

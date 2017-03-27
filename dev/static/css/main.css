@@ -3685,6 +3685,7 @@ img.block-slide__title__img {
 }
 .news__item_margin {
   margin: 0;
+  margin-top: 20px;
 }
 .news__item_margin .news__item__img {
   margin: 0;

@@ -43,34 +43,34 @@ $(function () {
         }
     });
 
-//     ymaps.ready(function() {
-//         var myMap = new ymaps.Map("map", {
-//                 center: [55.837025, 37.293038],
-//                 zoom: 16
-//             }, {
-//                 searchControlProvider: 'yandex#search'
-//             }),
-//             myPlacemark = new ymaps.Placemark([55.837025, 37.293038], {
-//                 // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-//                 iconCaption: ' ул. Ленина, 67а'
-//                 // balloonContentFooter: "Подвал",
-//             }, {
-//                 preset : 'islands#redDotIconWithCaption'
-//             });
-//
-//         myMap.geoObjects.add(myPlacemark);
-//         myMap.behaviors.disable('scrollZoom');
-//         myMap.controls
-//             .remove('trafficControl')
-//             .remove('searchControl')
-//             .remove('typeSelector')
-//             .remove('geolocationControl')
-//             .remove('fullscreenControl')
-//             .remove('rulerControl');
-//     });
-//
-//     $('input[name="phone"]').mask("+7 (999) 999-99-99",{placeholder:"_"});
-//
+     ymaps.ready(function() {
+         var myMap = new ymaps.Map("map", {
+                 center: [55.837025, 37.293038],
+                 zoom: 16
+             }, {
+                 searchControlProvider: 'yandex#search'
+             }),
+             myPlacemark = new ymaps.Placemark([55.837025, 37.293038], {
+                 // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                 iconCaption: ' ул. Ленина, 67а'
+                 // balloonContentFooter: "Подвал",
+             }, {
+                 preset : 'islands#redDotIconWithCaption'
+             });
+
+         myMap.geoObjects.add(myPlacemark);
+         myMap.behaviors.disable('scrollZoom');
+         myMap.controls
+             .remove('trafficControl')
+             .remove('searchControl')
+             .remove('typeSelector')
+             .remove('geolocationControl')
+             .remove('fullscreenControl')
+             .remove('rulerControl');
+     });
+
+     $('input[name="phone"]').mask("+7 (999) 999-99-99",{placeholder:"_"});
+
 });
 
 

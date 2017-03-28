@@ -5,26 +5,27 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
-        responsive: [
-            {
-                breakpoint: 610,
-                settings: {
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 908,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3
-                }
-            }
-        ]
+        //infinite: true
+        //responsive: [
+        //    {
+        //        breakpoint: 610,
+        //        settings: {
+        //            slidesToShow: 1
+        //        }
+        //    },
+        //    {
+        //        breakpoint: 908,
+        //        settings: {
+        //            slidesToShow: 2
+        //        }
+        //    },
+        //    {
+        //        breakpoint: 1200,
+        //        settings: {
+        //            slidesToShow: 3
+        //        }
+        //    }
+        //]
     });
 
     $('.js-slide-small').slick({

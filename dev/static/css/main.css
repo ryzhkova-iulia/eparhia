@@ -3165,12 +3165,21 @@ button {
   bottom: 0;
   width: 100%;
   line-height: 24px;
+  font-weight: bold;
 }
 .slider__item__text__link {
   color: #f34639;
   display: inline-block;
   float: right;
   text-decoration: underline;
+}
+.slider__item__price {
+  float: left;
+  font-weight: normal;
+}
+.slider__item__price span {
+  color: #f34639;
+  font-weight: bold;
 }
 .title {
   background: url("../img/general/flip_title.png") repeat-x center center;
@@ -3443,7 +3452,7 @@ img.block-slide__title__img {
   margin-left: 10px;
 }
 .main-content {
-  width: 65%;
+  width: 78%;
   display: inline-block;
   margin-right: 5px;
   text-align: center;
@@ -3473,7 +3482,7 @@ img.block-slide__title__img {
   line-height: 30px;
 }
 .videos {
-  width: 34%;
+  width: 20%;
   display: inline-block;
   text-align: left;
   vertical-align: top;
@@ -3507,6 +3516,12 @@ img.block-slide__title__img {
 }
 .news-structure .news__item .news__item__img {
   width: 100%;
+}
+.news-structure .news__item__text {
+  width: 100%;
+}
+.videos-structure .title__text {
+  font-size: 20px;
 }
 .title_width {
   width: 50%;
